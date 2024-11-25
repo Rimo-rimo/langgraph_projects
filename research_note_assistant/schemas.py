@@ -7,7 +7,7 @@ from typing import Optional
 
 class Section(BaseModel):
     section_title: str = Field(..., title="The title of the section in research note")
-    contests: str = Field(..., title="The content of the section")
+    contents: str = Field(..., title="The content of the section")
 
 class DraftOutline(BaseModel):
     """연구노트 작성을 위한 초안"""
